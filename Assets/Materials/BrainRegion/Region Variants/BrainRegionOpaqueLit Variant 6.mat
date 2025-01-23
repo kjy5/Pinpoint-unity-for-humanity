@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BrainRegionOpaqueLit Variant 1 1
+  m_Name: BrainRegionOpaqueLit Variant 6
   m_Shader: {fileID: -6465566751694194690, guid: c686c2a13bc712e4691f70d8051a0290, type: 3}
   m_Parent: {fileID: 2100000, guid: 4fdce846a282bef42af0221c4d4da68d, type: 2}
   m_ModifiedSerializedProperties: 2
