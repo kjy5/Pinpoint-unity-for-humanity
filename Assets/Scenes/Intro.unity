@@ -223,7 +223,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1932847273}
-  - {fileID: 1558044410}
+  - {fileID: 1847253249}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &242994316
@@ -462,6 +462,10 @@ PlayableDirector:
     value: {fileID: 489222584}
   - key: {fileID: -7198741716439402262, guid: f8b1c5dc11676f94ba0756d3b7cf9ae1, type: 2}
     value: {fileID: 1811073516}
+  - key: {fileID: 8776696860421608164, guid: f8b1c5dc11676f94ba0756d3b7cf9ae1, type: 2}
+    value: {fileID: 1847253248}
+  - key: {fileID: -526256840399141811, guid: f8b1c5dc11676f94ba0756d3b7cf9ae1, type: 2}
+    value: {fileID: 1325297993}
   m_ExposedReferences:
     m_References:
     - b1d2ea6b7e506d44a997567e1fdd383f: {fileID: 1343533162}
@@ -1037,6 +1041,7 @@ GameObject:
   - component: {fileID: 1325297990}
   - component: {fileID: 1325297989}
   - component: {fileID: 1325297992}
+  - component: {fileID: 1325297993}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1162,6 +1167,28 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!95 &1325297993
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325297988}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1343533160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1172,15 +1199,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8599610478370708555, guid: c6cbe13bba479184aa05bff7d11023f5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.7
+      value: 13.2
       objectReference: {fileID: 0}
     - target: {fileID: 8599610478370708555, guid: c6cbe13bba479184aa05bff7d11023f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -35.5
+      value: -33.6
       objectReference: {fileID: 0}
     - target: {fileID: 8599610478370708555, guid: c6cbe13bba479184aa05bff7d11023f5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.2
+      value: -1.9
       objectReference: {fileID: 0}
     - target: {fileID: 8599610478370708555, guid: c6cbe13bba479184aa05bff7d11023f5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1331,7 +1358,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 157318505}
+  m_Father: {fileID: 1847253249}
   m_LocalEulerAnglesHint: {x: 57.669, y: 0, z: 0}
 --- !u!114 &1558044411
 MonoBehaviour:
@@ -1558,6 +1585,61 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1847253247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1847253249}
+  - component: {fileID: 1847253248}
+  m_Layer: 0
+  m_Name: Spotlight Pivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1847253248
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847253247}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &1847253249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847253247}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1558044410}
+  m_Father: {fileID: 157318505}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1860743252
 PrefabInstance:
   m_ObjectHideFlags: 0
