@@ -791,7 +791,7 @@ public class CartesianProbeController : ProbeController
     public override void SetProbePosition(Vector4 positionDepth)
     {
         Insertion.APMLDV = positionDepth;
-        _depth = positionDepth.w;
+        _depth += positionDepth.w;
         SetProbePosition();
     }
 
